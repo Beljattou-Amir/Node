@@ -1,10 +1,17 @@
-const express = require ('express')
-const app = express()
-const morgan = require ('morgan')
+const express = require ('express');
+const app = express();
+const morgan = require ('morgan');
+const mongoose = require('mongoose');
 
 
+const taskRoutes = require('./api/routes/task');
 
-const taskRoutes = require('./api/routes/task')
+mongoose.connect("mongodb+srv://Zero:" +
+ process.env.MONGO_ATLAS_PW +
+"@clustercrud.ysmhp.mongodb.net/?retryWrites=true&w=majority",
+{
+    useMongoClient: true
+})
 
 app.use(morgan('dev'))
 
