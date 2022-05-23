@@ -1,0 +1,22 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "test node classe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/beljattou-amir/node.git"
+  },
+  "author": "amir beljattou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beljattou-amir/node/issues"
+  },
+  "homepage": "https://github.com/beljattou-amir/node#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
